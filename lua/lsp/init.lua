@@ -1,3 +1,4 @@
+vim.lsp.enable('gopls')
 vim.lsp.enable('clangd')
 
 vim.api.nvim_create_autocmd('LspAttach', {
