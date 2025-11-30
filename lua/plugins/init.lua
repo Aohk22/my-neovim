@@ -1,4 +1,6 @@
 require('plugins/nvim-treesitter')
+require('plugins/nvim-devicons')
 require('plugins/kanagawa')
-
+require('plugins/telescope')
+require('plugins/autoclose')
 vim.cmd('colorscheme kanagawa-dragon')
