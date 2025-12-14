@@ -1,5 +1,7 @@
 vim.lsp.enable('gopls')
 vim.lsp.enable('clangd')
+vim.lsp.enable('rust-analyzer')
+vim.lsp.enable('pylsp')
 
 vim.api.nvim_create_autocmd('LspAttach', {
 	group = vim.api.nvim_create_augroup('my.lsp', {}),
