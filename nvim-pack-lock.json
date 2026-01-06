@@ -4,6 +4,10 @@
       "rev": "3f86702b54a861a17d7994b2e32a7c648cb12fb1",
       "src": "https://github.com/m4xshen/autoclose.nvim"
     },
+    "blink.cmp": {
+      "rev": "6a4914ca987453464a7dfc7fc237a992adb567d0",
+      "src": "https://github.com/saghen/blink.cmp.git"
+    },
     "kanagawa": {
       "rev": "aef7f5cec0a40dbe7f3304214850c472e2264b10",
       "src": "https://github.com/rebelot/kanagawa.nvim.git"
@@ -11,6 +15,10 @@
     "markview.nvim": {
       "rev": "0a5033326f703d99a8788e2d47753d6298195e8a",
       "src": "https://github.com/OXY2DEV/markview.nvim"
+    },
+    "nvim-cmp": {
+      "rev": "85bbfad83f804f11688d1ab9486b459e699292d6",
+      "src": "https://github.com/hrsh7th/nvim-cmp.git"
     },
     "nvim-lspconfig": {
       "rev": "e0fae251f8459940331960106d4bd9457cec23de",
@@ -40,6 +48,14 @@
     "telescope.nvim": {
       "rev": "e69b434b968a33815e2f02a5c7bd7b8dd4c7d4b2",
       "src": "https://github.com/nvim-telescope/telescope.nvim"
+    },
+    "vim-vsnip": {
+      "rev": "9bcfabea653abdcdac584283b5097c3f8760abaa",
+      "src": "https://github.com/hrsh7th/vim-vsnip.git"
+    },
+    "vim-vsnip-integ": {
+      "rev": "c7c93934dece8315db3649bdc6898b76358a8b8d",
+      "src": "https://github.com/hrsh7th/vim-vsnip-integ.git"
     }
   }
 }

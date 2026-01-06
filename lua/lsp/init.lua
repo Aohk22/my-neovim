@@ -1,7 +1,10 @@
+require('lsp/nvim-lspconfig')
+
 vim.lsp.enable('gopls')
 vim.lsp.enable('clangd')
-vim.lsp.enable('rust-analyzer')
-vim.lsp.enable('pylsp')
+vim.lsp.enable('rust_analyzer')
+vim.lsp.enable('pyright')
+vim.lsp.enable('ts_ls')
 
 vim.api.nvim_create_autocmd('LspAttach', {
 	group = vim.api.nvim_create_augroup('my.lsp', {}),
@@ -14,3 +17,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 		end
 	end
 })
+
+vim.cmd [[
+	set completeopt=menuone,noselect
+]]
