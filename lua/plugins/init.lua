@@ -4,4 +4,5 @@ require('plugins/kanagawa')
 require('plugins/telescope')
 require('plugins/autoclose')
 require('plugins/nvim-ts-autotag')
+
 vim.cmd('colorscheme kanagawa-dragon')
