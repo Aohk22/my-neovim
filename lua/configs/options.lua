@@ -11,21 +11,24 @@ vim.opt.wrap = false
 
 vim.opt.timeoutlen = 2000
 
-vim.keymap.set('n', 'gl', vim.diagnostic.open_float, 
-{
-	desc = 'LSP: Show diagnostic float (current line)',
-})
+vim.keymap.set('n', 'gl', vim.diagnostic.open_float,
+	{
+		desc = 'LSP: Show diagnostic float (current line)',
+	})
 
-vim.api.nvim_create_autocmd({'BufEnter'}, 
-{
-	pattern = {'*.json'},
-	command = 'set shiftwidth=2 tabstop=2',
-})
+vim.api.nvim_create_autocmd({ 'BufEnter' },
+	{
+		pattern = { '*.json' },
+		command = 'set shiftwidth=2 tabstop=2',
+	})
 
-vim.api.nvim_create_autocmd({'FileType'},
-{ 
-	pattern = {'*.js', '*.c', '*.md', '*.css', '*.html', '*.cpp', '*.go', '*.yaml', '*.json', '*.jsx'},
-	callback = function()
-		vim.treesitter.start()
-	end
-})
+vim.api.nvim_create_autocmd({ 'FileType' },
+	{
+		pattern = { '*.js', '*.c', '*.md', '*.css', '*.html', '*.cpp', '*.go', '*.yaml', '*.json', '*.jsx' },
+		callback = function()
+			vim.treesitter.start()
+		end
+	}
+)
+
+vim.opt.undofile = true

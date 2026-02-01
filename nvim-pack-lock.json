@@ -36,6 +36,14 @@
       "rev": "0a5033326f703d99a8788e2d47753d6298195e8a",
       "src": "https://github.com/OXY2DEV/markview.nvim"
     },
+    "neo-tree.nvim": {
+      "rev": "466ba7ac7e4841a73d01afa48b6be8a4825a2372",
+      "src": "https://github.com/nvim-neo-tree/neo-tree.nvim"
+    },
+    "nui.nvim": {
+      "rev": "de740991c12411b663994b2860f1a4fd0937c130",
+      "src": "https://github.com/MunifTanjim/nui.nvim"
+    },
     "nvim-cmp": {
       "rev": "85bbfad83f804f11688d1ab9486b459e699292d6",
       "src": "https://github.com/hrsh7th/nvim-cmp.git"
@@ -47,6 +55,10 @@
     "nvim-lspconfig": {
       "rev": "e0fae251f8459940331960106d4bd9457cec23de",
       "src": "https://github.com/neovim/nvim-lspconfig.git"
+    },
+    "nvim-tree.lua": {
+      "rev": "037d89e60fb01a6c11a48a19540253b8c72a3c32",
+      "src": "https://github.com/nvim-tree/nvim-tree.lua"
     },
     "nvim-treesitter": {
       "rev": "bb83a676128d95c865e40ba71376d883bdadec14",
@@ -80,6 +92,10 @@
     "vim-vsnip-integ": {
       "rev": "c7c93934dece8315db3649bdc6898b76358a8b8d",
       "src": "https://github.com/hrsh7th/vim-vsnip-integ.git"
+    },
+    "which-key.nvim": {
+      "rev": "3aab2147e74890957785941f0c1ad87d0a44c15a",
+      "src": "https://github.com/folke/which-key.nvim"
     }
   }
 }
