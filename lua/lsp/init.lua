@@ -22,6 +22,11 @@ vim.lsp.config('jdtls', {
 	}
 })
 
+vim.lsp.config('kotlin_language_server', {
+	cmd = { 'kotlin-lsp', '--stdio' },
+	filetypes = { 'kotlin', 'kt', 'kts' },
+})
+
 vim.lsp.enable('gopls')
 vim.lsp.enable('clangd')
 vim.lsp.enable('rust_analyzer')
@@ -29,6 +34,7 @@ vim.lsp.enable('pyright')
 vim.lsp.enable('ts_ls')
 vim.lsp.enable('jdtls')
 vim.lsp.enable('lua_ls')
+-- vim.lsp.enable('kotlin_language_server')
 
 vim.api.nvim_create_autocmd('LspAttach', {
 	group = vim.api.nvim_create_augroup('my.lsp', {}),
