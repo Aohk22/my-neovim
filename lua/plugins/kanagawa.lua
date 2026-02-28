@@ -1,6 +1,4 @@
-local kg = require('kanagawa')
-
-kg.setup({
+require('kanagawa').setup({
 	commentStyle = { italic = false },
 	keywordStyle = { italic = false },
 })
