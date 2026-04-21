@@ -12,9 +12,13 @@ vim.opt.undofile = true
 
 vim.opt.laststatus = 3
 
-vim.keymap.set('n', 'gl', vim.diagnostic.open_float)
-
-vim.api.nvim_create_autocmd({ 'BufEnter' }, {
-	pattern = { '*.json' },
-	command = 'set shiftwidth=2 tabstop=2',
+vim.filetype.add({
+	extension = {
+		wgsl = 'wgsl',
+		razor = 'razor'
+	}
 })
+
+local termfeatures = vim.g.termfeatures or {}
+termfeatures.osc52 = false
+vim.g.termfeatures = termfeatures
