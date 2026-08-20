@@ -1,41 +1,15 @@
-vim.api.nvim_create_autocmd({ 'BufEnter' }, {
-	pattern = { '*.json' },
-	command = 'set shiftwidth=2 tabstop=2',
-})
-
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = "razor",
-	callback = function()
-		vim.treesitter.start()
-	end,
-})
-
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = "wgsl",
-	callback = function()
-		vim.treesitter.start()
-	end,
-})
-
 vim.api.nvim_create_autocmd({ "InsertLeave" }, {
 	callback = function()
-		if vim.bo.readonly then
-			return
+		if vim.bo.modifiable
+			and vim.bo.modified
+			and not (vim.bo.filetype ~= 'oil')
+			and not vim.bo.readonly then
+			vim.cmd('write')
 		end
-
-		if not vim.bo.modifiable then
-			return
-		end
-
-		if not vim.bo.modified then
-			return
-		end
-
-		vim.cmd('write')
 	end
 })
 
-local lsp_group = vim.api.nvim_create_augroup('my.lsp', { clear = true })
+local lsp_group = vim.api.nvim_create_augroup('LspAuto', { clear = true })
 
 vim.api.nvim_create_autocmd('LspAttach', {
 	group = lsp_group,
@@ -103,5 +77,3 @@ vim.api.nvim_create_autocmd('LspAttach', {
 		end
 	end,
 })
-
-vim.cmd [[set completeopt=menuone,noselect]]
