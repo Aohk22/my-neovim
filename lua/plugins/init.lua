@@ -6,7 +6,5 @@ require('plugins/autoclose')
 require('plugins/nvim-ts-autotag')
 require('plugins/neo-tree')
 require('plugins/oil')
-require('plugins/avante')
 require('plugins/snacks')
-
-vim.cmd('colorscheme kanagawa-dragon')
+require('plugins/colorizer-plugin')
