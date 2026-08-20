@@ -1,4 +1,6 @@
-local gh = function(x) return 'https://github.com/' .. x end
+local function gh(repo)
+	return 'https://github.com/' .. repo
+end
 
 vim.pack.add({
 	-- Plugins for UI.
@@ -8,17 +10,11 @@ vim.pack.add({
 	{ -- Icons
 		name = 'devicons', src = gh('nvim-tree/nvim-web-devicons'),
 	},
-	gh('MeanderingProgrammer/render-markdown.nvim'),
+	gh('catgoose/nvim-colorizer.lua'),
 
 
 	-- Plugins for LSP.
 	gh('neovim/nvim-lspconfig.git'),
-	gh('mfussenegger/nvim-jdtls'),
-	-- gh('nvim-java/nvim-java'),
-	-- {
-	-- 	src = 'https://github.com/JavaHello/spring-boot.nvim',
-	-- 	version = '218c0c26c14d99feca778e4d13f5ec3e8b1b60f0',
-	-- },
 
 
 	-- QoL plugins.
@@ -27,15 +23,12 @@ vim.pack.add({
 	gh('nvim-telescope/telescope.nvim'), -- Quick file find.
 	gh('m4xshen/autoclose.nvim'),     -- Closes brackets.
 	gh('windwp/nvim-ts-autotag.git'), -- Closes tags.
+	gh('tpope/vim-surround'),
 
 
 	-- File explorer
 	gh('nvim-neo-tree/neo-tree.nvim'),
 	gh('stevearc/oil.nvim'),
-
-
-	-- Plugins for AI.
-	gh('yetone/avante.nvim'),
 
 
 	-- Other dependencies
